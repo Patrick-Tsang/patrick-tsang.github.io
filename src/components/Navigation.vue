@@ -18,7 +18,7 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-app-bar app color="blue darken-4" dense dark>
+        <v-app-bar app dense inverted-scroll light>
             <v-app-bar-nav-icon
                 class="hidden-md-and-up"
                 @click="drawer = !drawer"
