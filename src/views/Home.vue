@@ -1,19 +1,19 @@
 <template>
     <span>
         <welcome></welcome>
-        <home-details></home-details>
+        <about-me></about-me>
     </span>
 </template>
 
 <script>
 import Welcome from '@/components/Welcome';
-import HomeDetails from '@/components/HomeDetails';
+import AboutMe from '@/components/AboutMe';
 
 export default {
     name: 'home',
     components: {
         Welcome,
-        HomeDetails
+        AboutMe
     }
 };
 </script>
