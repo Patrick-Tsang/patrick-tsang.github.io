@@ -39,7 +39,4 @@ export default {
     width: 100%;
     height: 100vh;
 }
-.headline {
-    line-height: 1.5 !important;
-}
 </style>

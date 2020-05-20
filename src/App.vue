@@ -18,4 +18,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.headline {
+    line-height: 1.5 !important;
+}
+</style>
