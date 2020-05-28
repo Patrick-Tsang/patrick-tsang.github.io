@@ -13,8 +13,9 @@
                         class="headline font-weight-light"
                         data-aos="fade-right"
                     >
-                        My name is Patrick Tsang. I'm a Software Engineer, currently located in
-                        Toronto, Ontario. Welcome to my personal website! 
+                        My name is Patrick Tsang. I'm a Software Engineer,
+                        currently located in Toronto, Ontario. Welcome to my
+                        personal website!
                     </div>
                 </v-col>
             </v-row>

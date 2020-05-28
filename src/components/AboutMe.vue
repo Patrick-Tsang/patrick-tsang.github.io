@@ -1,24 +1,46 @@
 <template>
     <v-row transition="slide-x-transition" no-gutters>
-        <v-col class="background-image hidden-sm-and-down" data-aos="fade-up"></v-col>
+        <v-col
+            class="background-image hidden-sm-and-down"
+            data-aos="fade-right"
+        ></v-col>
         <v-col class="text-content">
-            <v-row align="center" justify="center" style="height: 100vh">
-                <v-col class="col-10 col-md-8 col-sm-9" data-aos="fade-down">
+            <v-row
+                align="center"
+                justify="center"
+                v-bind:class="{ height_styling: $vuetify.breakpoint.mdAndUp }"
+            >
+                <v-col class="col-10 col-md-8 col-sm-9">
                     <div class="display-3 font-weight-thin">About Me</div>
                     <div class="headline font-weight-light">
-                        <p>I'm a big fan of software development, particularly web development and open data.</p>
-                        <p>I'm passionate about projects that help people achieve their goals, no matter what they may be.</p>
+                        <p>
+                            I'm a big fan of software development, particularly
+                            web development and open data.
+                        </p>
+                        <p>
+                            I'm passionate about projects that help people
+                            achieve their goals, no matter what they may be.
+                        </p>
                     </div>
-                    <div class="display-1 font-weight-thin">My Languages</div>
-                    <br />Javascript
-                    <v-progress-linear value="90" color="deep-purple accent-4"></v-progress-linear>
-                    <br />Python
-                    <v-progress-linear value="90" color="deep-purple accent-4"></v-progress-linear>
-                    <br />HTML/CSS
-                    <v-progress-linear value="75" color="deep-purple accent-4"></v-progress-linear>
-                    <br />PHP
-                    <v-progress-linear value="65" color="deep-purple accent-4"></v-progress-linear>
-                    <br />
+                    <v-card shaped>
+                        <v-card-title class="headline"
+                            >My Languages</v-card-title
+                        >
+
+                        <v-card-subtitle>
+                            <div
+                                v-for="lang in languages"
+                                v-bind:key="lang.name"
+                            >
+                                <br />
+                                {{ lang.name }}
+                                <v-progress-linear
+                                    :value="lang.val"
+                                    color="deep-purple accent-4"
+                                ></v-progress-linear>
+                            </div>
+                        </v-card-subtitle>
+                    </v-card>
                 </v-col>
             </v-row>
         </v-col>
@@ -27,7 +49,29 @@
 
 <script>
 export default {
-    name: 'AboutMe'
+    name: 'AboutMe',
+    data: function() {
+        return {
+            languages: [
+                {
+                    name: 'Javascript',
+                    val: 90
+                },
+                {
+                    name: 'Python',
+                    val: 80
+                },
+                {
+                    name: 'SQL',
+                    val: 75
+                },
+                {
+                    name: 'HTML/CSS',
+                    val: 65
+                }
+            ]
+        };
+    }
 };
 </script>
 
@@ -39,7 +83,13 @@ export default {
     height: 100vh;
 }
 .text-content {
-    background-color: #81afd0;
+    background-color: #b1cee2;
+    display: block;
+    min-height: 100vh;
+    padding: 5px;
+}
+.height_styling {
+    height: 100vh;
 }
 .display-3 {
     line-height: 6rem !important;
