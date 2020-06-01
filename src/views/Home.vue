@@ -1,7 +1,7 @@
 <template>
     <span>
-        <welcome></welcome>
-        <about-me></about-me>
+        <welcome id="home"></welcome>
+        <about-me id="about"></about-me>
     </span>
 </template>
 

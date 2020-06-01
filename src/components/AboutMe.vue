@@ -1,5 +1,5 @@
 <template>
-    <v-row transition="slide-x-transition" no-gutters>
+    <v-row transition="slide-x-transition" no-gutters class="full-background">
         <v-col
             class="background-image hidden-sm-and-down"
             data-aos="fade-right"
@@ -10,7 +10,7 @@
                 justify="center"
                 v-bind:class="{ height_styling: $vuetify.breakpoint.mdAndUp }"
             >
-                <v-col class="col-10 col-md-8 col-sm-9">
+                <v-col class="col-10 col-md-8 col-sm-9" data-aos="fade-left">
                     <div class="display-3 font-weight-thin">About Me</div>
                     <div class="headline font-weight-light">
                         <p>
@@ -83,7 +83,6 @@ export default {
     height: 100vh;
 }
 .text-content {
-    background-color: #b1cee2;
     display: block;
     min-height: 100vh;
     padding: 5px;
@@ -93,5 +92,8 @@ export default {
 }
 .display-3 {
     line-height: 6rem !important;
+}
+.full-background {
+    background-color: #b1cee2;
 }
 </style>
