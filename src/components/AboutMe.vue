@@ -90,9 +90,6 @@ export default {
 .height_styling {
     height: 100vh;
 }
-.display-3 {
-    line-height: 6rem !important;
-}
 .full-background {
     background-color: #b1cee2;
 }

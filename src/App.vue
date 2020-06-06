@@ -22,4 +22,7 @@ export default {
 .headline {
     line-height: 1.5 !important;
 }
+.display-3 {
+    padding-bottom: 1rem !important;
+}
 </style>

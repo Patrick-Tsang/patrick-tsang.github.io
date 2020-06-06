@@ -10,7 +10,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init({
-    duration: 800,
+    duration: 500,
+    once: true,
     disable: 'mobile'
 });
 Vue.config.productionTip = false;
