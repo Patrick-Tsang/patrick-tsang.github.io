@@ -85,7 +85,7 @@ export default {
 .text-content {
     display: block;
     min-height: 100vh;
-    padding: 5px;
+    padding: 0px;
 }
 .height_styling {
     height: 100vh;
