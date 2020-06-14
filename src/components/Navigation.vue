@@ -90,19 +90,13 @@ export default {
             title: 'Patrick Tsang ',
             items: [
                 { title: 'Home', icon: 'mdi-home-city', tag: '#home' },
-                
-                { title: 'About Me', icon: 'mdi-account', tag: '#about' },
-
-                {
-                    title: 'Interests',
-                    icon: 'mdi-thumb-up',
-                    tag: '#interests'
-                },
                 {
                     title: 'Projects',
                     icon: 'mdi-folder-account',
                     tag: '#projects'
                 },
+                { title: 'About Me', icon: 'mdi-account', tag: '#about' },
+
                 { title: 'Contact', icon: 'mdi-email', tag: '#contact' }
             ],
             mini: true

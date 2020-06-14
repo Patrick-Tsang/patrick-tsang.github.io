@@ -4,7 +4,7 @@
         style="background-color: #7880B5"
         no-gutters
     >
-        <v-col class="col-md-6 col-sm-12">
+        <v-col class="col-md-6 col-sm-12" data-aos="fade-right">
             <v-row align="center" justify="center" style="min-height:100vh">
                 <v-col class="col-10 col-md-8 col-sm-9">
                     <div class="display-3 font-weight-thin">
@@ -18,6 +18,12 @@
                         <p>
                             Feel free to use the contact form to talk to me! You
                             can also get in touch with me through social media.
+                        </p>
+                        <p>
+                            If you'd prefer to email me, here it is:
+                            <a href="mailto:patricksmtsang@gmail.com"
+                                >patricksmtsang@gmail.com</a
+                            >
                         </p>
                         <v-row>
                             <v-col
@@ -34,7 +40,12 @@
             </v-row>
         </v-col>
         <v-col class="col-md-6 col-12" style="background-color: #C0A9B0">
-            <v-row align="center" justify="center" style="min-height:100vh">
+            <v-row
+                align="center"
+                justify="center"
+                style="min-height:100vh"
+                data-aos="fade-left"
+            >
                 <v-col class="col-10 col-md-8 col-sm-9">
                     <v-form v-if="submitted == false" method="POST">
                         <div class="display-3 font-weight-thin">Contact Me</div>

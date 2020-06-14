@@ -25,4 +25,7 @@ export default {
 .display-3 {
     padding-bottom: 1rem !important;
 }
+.v-application a {
+    color: blueviolet;
+}
 </style>

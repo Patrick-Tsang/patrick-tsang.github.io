@@ -1,24 +1,6 @@
 # patrick-tsang.github.io
+This is a repo for my personal website! 
 
-## Project setup
-```
-npm install
-```
+It runs on Vue.js, with Vuetify.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+To see the live build, click this [link](https://patrick-tsang.github.io).

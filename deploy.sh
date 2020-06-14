@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 set -e
 npm run build
+cp README.md dist
 cd dist
 git init
 git add -A
