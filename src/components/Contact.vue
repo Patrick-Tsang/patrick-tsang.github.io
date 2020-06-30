@@ -21,9 +21,9 @@
                         </p>
                         <p>
                             If you'd prefer to email me, here it is:
-                            <a href="mailto:patricksmtsang@gmail.com"
-                                >patricksmtsang@gmail.com</a
-                            >
+                            <v-btn class="ma-2" dark outlined color="blue" ripple style="background-color: white" href="mailto:patricksmtsang@gmail.com">
+      patricksmtsang@gmail.com<v-icon>mdi-email</v-icon>
+    </v-btn>
                         </p>
                         <v-row>
                             <v-col
